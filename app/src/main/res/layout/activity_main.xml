@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F3F8"
+    android:paddingLeft="5sp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/fondo"
+        android:layout_width="407dp"
+        android:layout_height="206dp"
+        android:background="#23599E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:text="facebook"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/fondo"
+        app:layout_constraintTop_toTopOf="@+id/fondo" />
+
+    <TextView
+        android:id="@+id/correousuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/correousuario"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/facebook"
+        app:layout_constraintTop_toBottomOf="@+id/facebook" />
+
+    <EditText
+        android:id="@+id/incorreo"
+        android:layout_width="163dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/correousuario"
+        app:layout_constraintTop_toBottomOf="@+id/correousuario" />
+
+    <EditText
+        android:id="@+id/incontra"
+        android:layout_width="144dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/contrausuario"
+        app:layout_constraintTop_toBottomOf="@+id/contrausuario" />
+
+    <TextView
+        android:id="@+id/contrausuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:text="Contraseña"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/correousuario"
+        app:layout_constraintTop_toBottomOf="@+id/facebook" />
+
+    <TextView
+        android:id="@+id/registrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Regístrate"
+        android:textColor="#013867"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/fondo"
+        app:layout_constraintTop_toBottomOf="@+id/fondo" />
+
+    <TextView
+        android:id="@+id/gratis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Es gratis (y lo seguirá siendo)."
+        android:textColor="#074D7C"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/registrate"
+        app:layout_constraintTop_toBottomOf="@+id/registrate" />
+
+    <TextView
+        android:id="@+id/nombres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="@string/nom"
+        android:textColor="#013867"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/name"
+        app:layout_constraintEnd_toStartOf="@+id/name"
+        app:layout_constraintTop_toTopOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/idcorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="@string/correo"
+        android:textColor="#013867"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/email"
+        app:layout_constraintEnd_toStartOf="@+id/email"
+        app:layout_constraintTop_toTopOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="@string/contraseña"
+        android:textColor="#013867"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/contra"
+        app:layout_constraintEnd_toStartOf="@+id/contra"
+        app:layout_constraintTop_toTopOf="@+id/contra" />
+
+    <TextView
+        android:id="@+id/sexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="@string/sexo"
+        android:textColor="#013867"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/fechanac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="@string/fechanac"
+        android:textColor="#013867"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fecha"
+        app:layout_constraintEnd_toStartOf="@+id/fecha"
+        app:layout_constraintTop_toTopOf="@+id/fecha" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="156dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gratis" />
+
+    <EditText
+        android:id="@+id/apellido"
+        android:layout_width="156dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="156dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/apellido"
+        app:layout_constraintTop_toBottomOf="@+id/apellido" />
+
+    <EditText
+        android:id="@+id/contra"
+        android:layout_width="156dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="375dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/contra"
+        app:layout_constraintTop_toBottomOf="@+id/contra">
+
+        <RadioButton
+            android:id="@+id/radioButtonFem"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/Fem"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2Mas"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Masculino"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/fecha"
+        android:layout_width="125dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/pregunta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/preg1"
+        android:textColor="#074D7C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fecha" />
+
+    <Button
+        android:id="@+id/registrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/registrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pregunta1" />
+
+    <Button
+        android:id="@+id/Entrar"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#5089DD"
+        android:text="@string/entrar"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incontra" />
+
+    <TextView
+        android:id="@+id/apellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="@string/ape"
+        android:textColor="#013867"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/apellido"
+        app:layout_constraintEnd_toStartOf="@+id/apellido"
+        app:layout_constraintTop_toTopOf="@+id/apellido" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="31dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nombres"
+        app:layout_constraintEnd_toStartOf="@+id/nombres"
+        app:layout_constraintTop_toTopOf="@+id/nombres"
+        app:srcCompat="@drawable/usuario" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="24dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fecha"
+        app:layout_constraintStart_toEndOf="@+id/fecha"
+        app:layout_constraintTop_toTopOf="@+id/fecha"
+        app:srcCompat="@drawable/calendario" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sexo"
+        app:layout_constraintEnd_toStartOf="@+id/sexo"
+        app:layout_constraintTop_toTopOf="@+id/sexo"
+        app:srcCompat="@drawable/usuarios_alt" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="24dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toBottomOf="@+id/contraseña"
+        app:layout_constraintEnd_toStartOf="@+id/contraseña"
+        app:layout_constraintTop_toTopOf="@+id/contraseña"
+        app:srcCompat="@drawable/controlar" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="36dp"
+        android:layout_height="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/idcorreo"
+        app:layout_constraintEnd_toStartOf="@+id/idcorreo"
+        app:layout_constraintTop_toTopOf="@+id/idcorreo"
+        app:srcCompat="@drawable/sobre" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="28dp"
+        android:layout_height="29dp"
+        app:layout_constraintBottom_toBottomOf="@+id/apellidos"
+        app:layout_constraintEnd_toStartOf="@+id/apellidos"
+        app:layout_constraintTop_toTopOf="@+id/apellidos"
+        app:srcCompat="@drawable/usuario__1_" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DAM_UC3_BrandonIsla</string>
+    <string name="apellido">apellido</string>
+    <string name="Femenino">fem</string>
+    <string name="Fem">Femenino</string>
+    <string name="registrar">Regístrate</string>
+    <string name="nom">Nombre:</string>
+    <string name="ape">Apellido:</string>
+    <string name="correo">Correo electrónico:</string>
+    <string name="contraseña">Contraseña nueva:</string>
+    <string name="sexo">Sexo:</string>
+    <string name="fechanac">Fecha de nacimiento:</string>
+    <string name="preg1">¿Por qué tengo que dar esta información?</string>
+    <string name="correousuario">Correo electrónico</string>
+    <string name="entrar">Entrar</string>
+</resources>
